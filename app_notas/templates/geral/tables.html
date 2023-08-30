@@ -1,0 +1,62 @@
+{% extends 'geral/padrao.html'%}
+{% block conteudo %}
+                <main>
+                    <div class="container-fluid px-4">
+                        <h3 class="mt-4">Consulta de notas emitidas</h3>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Consultas</li>
+                        </ol>
+                        
+                        <div class="card mb-4">
+                            <div class="card-header">
+                               Notas
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Nº NFe</th>
+                                            <th>Data Emissão</th>
+                                            <th>Hora Emissão</th>
+                                            <th>Natureza da operação</th>
+                                            <th>Cliente</th>
+                                            <th>Total NFe R$</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Nº NFe</th>
+                                            <th>Data Emissão</th>
+                                            <th>Hora Emissão</th>
+                                            <th>Natureza da operação</th>
+                                            <th>Cliente</th>
+                                            <th>Total NFe R$</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>0001</td>
+                                            <td>27/08/2023</td>
+                                            <td>12:00</td>
+                                            <td>Venda de mercadorias</td>
+                                            <td>Renato</td>
+                                            <td>$320,800</td>
+                                            <td>
+                                                <button type="button" class="btn btn-link btn-sm"><i class="fa fa-print"></i></button>
+                                                <button type="button" class="btn btn-link btn-sm"><i class="fa fa-download"></i></button>
+                                                <button type="button" class="btn btn-link btn-sm"><i class="fa fa-pencil"></i></button>
+
+
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+{% endblock %}

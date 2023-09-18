@@ -1,55 +1,55 @@
 {% extends 'geral/padrao.html'%}
 {% block conteudo %}
-                <main>
-                    <div class="container-fluid px-4">
-                        <h3 class="mt-4">Cadastro de clientes</h3>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Clientes</li>
-                        </ol>
-                        
-                        
+<main>
+    <div class="container-fluid px-4">
+        <h3 class="mt-4">Cadastro de clientes</h3>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Dashboard</a></li>
+            <li class="breadcrumb-item active">Clientes</li>
+        </ol>
+        
+        
 
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                Destinatário
-                            </div>
-                            <div class="card-body">
-                                <div class="row form-group">
-                                    <div class="col col-md-4"><label>CPF/CNPJ:</label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-8"><label>Razão Social/Nome: </label><input type="text" placeholder="" class="form-control"></div>
-                                </div>
-                                
-                                <div class="row form-group">
-                                    <div class="col col-md-2"><label>CEP:</label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-5"><label>Logradouro:</label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-1"><label>Número: </label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-4"><label>Complemento: </label><input type="text" placeholder="" class="form-control"></div>
-                                </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                Destinatário
+            </div>
+            <div class="card-body">
+                <div class="row form-group">
+                    <div class="col col-md-4"><label>CPF/CNPJ:</label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-8"><label>Razão Social/Nome: </label><input type="text" placeholder="" class="form-control"></div>
+                </div>
+                
+                <div class="row form-group">
+                    <div class="col col-md-2"><label>CEP:</label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-5"><label>Logradouro:</label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-1"><label>Número: </label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-4"><label>Complemento: </label><input type="text" placeholder="" class="form-control"></div>
+                </div>
 
 
-                                <div class="row form-group">
-                                    <div class="col col-md-3"><label>Bairro:</label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-7"><label>Cidade:</label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-2"><label>UF: </label><input type="text" placeholder="" class="form-control"></div>
-                                    
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col col-md-8"><label>Email: </label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-4"><label>Telefone: </label><input type="text" placeholder="" class="form-control"></div>
-                                    
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <input class="btn btn-success" type="submit" value="Guardar">
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label>Bairro:</label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-7"><label>Cidade:</label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-2"><label>UF: </label><input type="text" placeholder="" class="form-control"></div>
                     
-                </main>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-8"><label>Email: </label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-4"><label>Telefone: </label><input type="text" placeholder="" class="form-control"></div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <input class="btn btn-success" type="submit" value="Salvar">
+            </div>
+        </div>
+
+    </div>
+    
+</main>
 {% endblock %}

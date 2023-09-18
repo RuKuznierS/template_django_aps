@@ -1,68 +1,68 @@
 {% extends 'geral/padrao.html'%}
 {% block conteudo %}
-                <main>
-                    <div class="container-fluid px-4">
-                        <h3 class="mt-4">Cadastro de produtos</h3>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Produtos</li>
-                        </ol>
-                        
+<main>
+    <div class="container-fluid px-4">
+        <h3 class="mt-4">Cadastro de produtos</h3>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Dashboard</a></li>
+            <li class="breadcrumb-item active">Produtos</li>
+        </ol>
+        
 
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                Dados
-                            </div>
-                            <div class="card-body">
-                                <div class="row form-group">
-                                    <div class="col col-md-3"><label>Código:</label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-9"><label>Descrição: </label><input type="text" placeholder="" class="form-control"></div>
-                                </div>
-                                
-                                <div class="row form-group">
-                                    <div class="col col-md-3"><label>Categoria: </label>
-                                        <select name="select" id="select" class="form-control">
-                                            <option value="0">Please select</option>
-                                            <option value="1">Option #1</option>
-                                            <option value="2">Option #2</option>
-                                            <option value="3">Option #3</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col col-md-3"><label>Marca: </label>
-                                        <select name="select" id="select" class="form-control">
-                                            <option value="0">Please select</option>
-                                            <option value="1">Option #1</option>
-                                            <option value="2">Option #2</option>
-                                            <option value="3">Option #3</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col col-md-3"><label>Modelo:</label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-3"><label>Custo unitário:</label><input type="text" placeholder="" class="form-control"></div>
-
-                                </div>
-
-
-                                <div class="row form-group">
-                                    
-                                    <div class="col col-md-2"><label>Peso bruto: </label><input type="text" placeholder="" class="form-control"></div>
-                                    <div class="col col-md-2"><label>Peso Líquido: </label><input type="text" placeholder="" class="form-control"></div>
-                                    
-                                </div>
-                               
-
-                            </div>
-                        </div>
-
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                
-                                <input class="btn btn-success" type="submit" value="Guardar">
-                            </div>
-                        </div>
-
+        <div class="card mb-4">
+            <div class="card-header">
+                Dados
+            </div>
+            <div class="card-body">
+                <div class="row form-group">
+                    <div class="col col-md-3"><label>Código:</label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-9"><label>Descrição: </label><input type="text" placeholder="" class="form-control"></div>
+                </div>
+                
+                <div class="row form-group">
+                    <div class="col col-md-3"><label>Categoria: </label>
+                        <select name="select" id="select" class="form-control">
+                            <option value="0">Please select</option>
+                            <option value="1">Option #1</option>
+                            <option value="2">Option #2</option>
+                            <option value="3">Option #3</option>
+                        </select>
                     </div>
+
+                    <div class="col col-md-3"><label>Marca: </label>
+                        <select name="select" id="select" class="form-control">
+                            <option value="0">Please select</option>
+                            <option value="1">Option #1</option>
+                            <option value="2">Option #2</option>
+                            <option value="3">Option #3</option>
+                        </select>
+                    </div>
+
+                    <div class="col col-md-3"><label>Modelo:</label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-3"><label>Custo unitário:</label><input type="text" placeholder="" class="form-control"></div>
+
+                </div>
+
+
+                <div class="row form-group">
                     
-                </main>
+                    <div class="col col-md-2"><label>Peso bruto: </label><input type="text" placeholder="" class="form-control"></div>
+                    <div class="col col-md-2"><label>Peso Líquido: </label><input type="text" placeholder="" class="form-control"></div>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                
+                <input class="btn btn-success" type="submit" value="Salvar">
+            </div>
+        </div>
+
+    </div>
+    
+</main>
 {% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'geral/base.html'%}
+{% block conteudo %}
+<main>
+    <div class="container-fluid px-4">
+        <h3 class="mt-4">Consulta de Clientes</h3>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Dashboard</a></li>
+            <li class="breadcrumb-item active">Consultas</li>
+        </ol>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                Clientes
+            </div>
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>CPF/CNPJ</th>
+                            <th>Razão Social/Nome</th>
+                            <th>CEP</th>
+                            <th>Email</th>
+                            <th>Bairro</th>
+                            <th>Cidade</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Código</th>
+                            <th>CPF/CNPJ</th>
+                            <th>Razão Social/Nome</th>
+                            <th>CEP</th>
+                            <th>Email</th>
+                            <th>Bairro</th>
+                            <th>Cidade</th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>0001</td>
+                            <td>Teste</td>
+                            <td>Teste</td>
+                            <td>Teste</td>
+                            <td>Teste</td>
+                            <td>Teste</td>
+                            <td>Teste</td>
+                            <td>
+                                <button type="button" class="btn btn-link btn-sm"><i class="fa fa-pencil"></i></button>
+                                <button type="button" class="btn btn-link btn-sm"><i class="fa fa-times"></i></button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

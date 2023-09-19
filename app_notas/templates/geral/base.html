@@ -45,7 +45,7 @@
                             
 
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseNotas" aria-expanded="false" aria-controls="collapseNotas">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-file"></i></div>
                                 Nota fiscal
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -58,7 +58,7 @@
                             </div>
 
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProdutos" aria-expanded="false" aria-controls="collapseProdutos">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-truck"></i></div>
                                 Produtos
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -66,15 +66,23 @@
                             <div class="collapse" id="collapseProdutos" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="{% url 'produtos' %}">Cadastro</a>
-                                    <a class="nav-link" href="{% url 'produtos' %}">Consulta</a>
+                                    <a class="nav-link" href="{% url 'consulta_produtos' %}">Consulta</a>
                                 </nav>
                             </div>
 
-
-                            <a class="nav-link" href="{% url 'notas' %}">
-                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Consultas
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseClientes" aria-expanded="false" aria-controls="collapseClientes">
+                                <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                                Clientes
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
+
+                            <div class="collapse" id="collapseClientes" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="{% url 'clientes' %}">Cadastro</a>
+                                    <a class="nav-link" href="{% url 'consulta_clientes' %}">Consulta</a>
+                                </nav>
+                            </div>
+
                             
                         </div>
                     </div>

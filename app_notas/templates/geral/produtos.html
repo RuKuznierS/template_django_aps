@@ -1,4 +1,4 @@
-{% extends 'geral/padrao.html'%}
+{% extends 'geral/base.html'%}
 {% block conteudo %}
 <main>
     <div class="container-fluid px-4">
@@ -14,41 +14,45 @@
                 Dados
             </div>
             <div class="card-body">
-                <div class="row form-group">
-                    <div class="col col-md-3"><label>Código:</label><input type="text" placeholder="" class="form-control"></div>
-                    <div class="col col-md-9"><label>Descrição: </label><input type="text" placeholder="" class="form-control"></div>
+                <div class="card-body-form">
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label>Código:</label><input type="text" placeholder="" class="form-control"></div>
+                        <div class="col col-md-9"><label>Descrição: </label><input type="text" placeholder="" class="form-control"></div>
+                    </div>
                 </div>
                 
-                <div class="row form-group">
-                    <div class="col col-md-3"><label>Categoria: </label>
-                        <select name="select" id="select" class="form-control">
-                            <option value="0">Please select</option>
-                            <option value="1">Option #1</option>
-                            <option value="2">Option #2</option>
-                            <option value="3">Option #3</option>
-                        </select>
+                <div class="card-body-form">
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label>Categoria: </label>
+                            <select name="select" id="select" class="form-control">
+                                <option value="0">Please select</option>
+                                <option value="1">Option #1</option>
+                                <option value="2">Option #2</option>
+                                <option value="3">Option #3</option>
+                            </select>
+                        </div>
+
+                        <div class="col col-md-3"><label>Marca: </label>
+                            <select name="select" id="select" class="form-control">
+                                <option value="0">Please select</option>
+                                <option value="1">Option #1</option>
+                                <option value="2">Option #2</option>
+                                <option value="3">Option #3</option>
+                            </select>
+                        </div>
+
+                        <div class="col col-md-3"><label>Modelo:</label><input type="text" placeholder="" class="form-control"></div>
+                        <div class="col col-md-3"><label>Custo unitário:</label><input type="text" placeholder="" class="form-control"></div>
+
                     </div>
-
-                    <div class="col col-md-3"><label>Marca: </label>
-                        <select name="select" id="select" class="form-control">
-                            <option value="0">Please select</option>
-                            <option value="1">Option #1</option>
-                            <option value="2">Option #2</option>
-                            <option value="3">Option #3</option>
-                        </select>
-                    </div>
-
-                    <div class="col col-md-3"><label>Modelo:</label><input type="text" placeholder="" class="form-control"></div>
-                    <div class="col col-md-3"><label>Custo unitário:</label><input type="text" placeholder="" class="form-control"></div>
-
                 </div>
 
-
-                <div class="row form-group">
-                    
-                    <div class="col col-md-2"><label>Peso bruto: </label><input type="text" placeholder="" class="form-control"></div>
-                    <div class="col col-md-2"><label>Peso Líquido: </label><input type="text" placeholder="" class="form-control"></div>
-                    
+                <div class="card-body-form">
+                    <div class="row form-group">                    
+                        <div class="col col-md-2"><label>Peso bruto: </label><input type="text" placeholder="" class="form-control"></div>
+                        <div class="col col-md-2"><label>Peso Líquido: </label><input type="text" placeholder="" class="form-control"></div> 
+                        <div class="col col-md-2"><label>Quantidade em estoque: </label><input type="text" placeholder="" class="form-control"></div>     
+                    </div>
                 </div>
                 
 
@@ -57,8 +61,9 @@
 
         <div class="card mb-4">
             <div class="card-body">
-                
                 <input class="btn btn-success" type="submit" value="Salvar">
+                <button type="button" class="btn btn-secondary">Limpar</button>
+
             </div>
         </div>
 

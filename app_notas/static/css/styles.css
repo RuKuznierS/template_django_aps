@@ -2900,6 +2900,8 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
+  float: right;
+  margin-right: 5px;
 }
 
 .btn-success {
@@ -2937,6 +2939,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #0dcaf0;
   --bs-btn-disabled-border-color: #0dcaf0;
   float: right;
+  margin-right: 5px;
 }
 
 .btn-warning {
@@ -3158,6 +3161,8 @@ textarea.form-control-lg {
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   text-decoration: underline;
 }
+
+
 .btn-link:focus-visible {
   color: var(--bs-btn-color);
 }

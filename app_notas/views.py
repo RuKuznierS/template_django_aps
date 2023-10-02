@@ -19,3 +19,15 @@ def consulta_produtos(request):
 
 def consulta_clientes(request):
     return render(request, 'geral/consulta_clientes.html')
+
+def inicio_clientes(request):
+    return render(request, 'geral/principal_clientes.html')
+
+def selecao_compra(request):
+    return render(request, 'geral/selecao_compra.html')
+
+def emissao_notas(request):
+    return render(request, 'geral/emissaoNotas.html')
+
+def registro_usuario(request):
+    return render(request, 'geral/register.html')
